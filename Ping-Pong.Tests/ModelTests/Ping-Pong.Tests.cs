@@ -25,12 +25,37 @@ namespace NumberRange.Tests
     //   CollectionAssert.AreEqual(expectedResultList, actualResult);
     // }
 
+    // [TestMethod]
+    // public void Numbers_NumberDivisibleBy5_True()
+    // {
+    //   PingPong testPingPong = new PingPong();
+    //   List<string> expectedResultList = new List<string> {"pong"};
+    //   var actualResult =  testPingPong.NumberRange(3);
+    //   CollectionAssert.AreEqual(expectedResultList, actualResult);
+    // }
+
+    // [TestMethod]
+    // public void Numbers_PingAndPongWillFillTwoIndexesInList_True()
+    // {
+    //   PingPong testPingPong = new PingPong();
+    //   List<string> expectedResultList = new List<string> {"ping", "pong"};
+    //   var actualResult = testPingPong.NumberRange(5);
+    //   CollectionAssert.AreEqual(expectedResultList, actualResult);
+    // }
+    // [TestMethod]
+    // public void Numbers_NumbersDivisibleByThreeAndFivePingPong_True()
+    // {
+    //   PingPong testPingPong = new PingPong();
+    //   List<string> expectedResultList = new List<string> {"PiNg-PoNg"};
+    //   var actualResult = testPingPong.NumberRange(15);
+    //   CollectionAssert.AreEqual(expectedResultList, actualResult);
+    // }
     [TestMethod]
-    public void Numbers_NumberDivisibleBy5_True()
+    public void Numbers_PingPongNumberLineGenerates_True()
     {
       PingPong testPingPong = new PingPong();
-      List<string> expectedResultList = new List<string> {"pong"};
-      var actualResult =  testPingPong.NumberRange(3);
+      List<string> expectedResultList = new List<string> {"1", "2", "ping", "4", "pong", "ping", "7", "8", "ping", "pong", "11", "ping", "13", "14", "PiNg-PoNg", "16", "17", "ping", "19", "pong"};
+      var actualResult =  testPingPong.NumberRange(20);
       CollectionAssert.AreEqual(expectedResultList, actualResult);
     }
   }
