@@ -16,14 +16,22 @@ namespace NumberRange.Tests
     //   CollectionAssert.AreEqual(expectedResultList, actualResult);
     // }
 
+    // [TestMethod]
+    // public void Numbers_NumberDivisibleBy3_True()
+    // {
+    //   PingPong testPingPong = new PingPong();
+    //   List<string> expectedResultList = new List<string> {"ping"};
+    //   var actualResult =  testPingPong.NumberRange(3);
+    //   CollectionAssert.AreEqual(expectedResultList, actualResult);
+    // }
+
     [TestMethod]
-    public void Numbers_NumberDivisibleBy3_True()
+    public void Numbers_NumberDivisibleBy5_True()
     {
       PingPong testPingPong = new PingPong();
-      List<string> expectedResultList = new List<string> {"ping"};
+      List<string> expectedResultList = new List<string> {"pong"};
       var actualResult =  testPingPong.NumberRange(3);
       CollectionAssert.AreEqual(expectedResultList, actualResult);
-
     }
   }
 }
