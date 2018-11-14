@@ -4,9 +4,9 @@ namespace NumberRange
 {
   public class PingPong
   {
-    public bool Numbers(int number)
-    {
-
-    }
+    // public bool Numbers(int number)
+    // {
+    //
+    // }
   }
 }
